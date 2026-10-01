@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:skyblue;
+}
+
+@keyframes bubleanimation {
+    0% { 
+        bottom: -300px;
+    }
+
+    100% {
+        bottom: 100%;
+    }
+}
+
+.b1 {
+    height: 150px;
+    width: 150px;
+    box-shadow: inset 0px 0px 80px 10px white;
+    border-radius: 50%;
+    position: absolute;
+    left: 15px;
+    bottom: -300px;
+    animation: bubleanimation 4s 0s infinite ease-in;
+}
+
+.b2 {
+    height: 300px;
+    width: 300px;
+    box-shadow: inset 0px 0px 70px 5px yellow;
+    position: absolute;
+    left: 200px;
+    bottom: -300px;
+    border-radius: 50%;
+    animation: bubleanimation 7s 0s infinite ease-in;
+}
+
+.b3 {
+    height: 150px;
+    width: 150px;
+    box-shadow: inset 0px 0px 50px 4px red;
+    border-radius: 50%;
+    position: absolute;
+    left: 550px;
+    bottom: -300px;
+    animation: bubleanimation 7s 2s  infinite ease-in;
+}
+
+.b4 {
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    left: 750px;
+    border-radius: 50%;
+    bottom: -300px;
+    box-shadow: inset 0px 0px 50px 8px purple;
+     animation: bubleanimation 4s 0s  infinite ease-in;
+}
+
+.b5 {
+    height: 150px;
+    position: absolute;
+    width: 150px;
+    bottom: -300px;
+    left: 1050px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 40px 6px pink;
+     animation: bubleanimation 7s 0s  infinite ease-in;
+}
+
+.b6 {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 30px 9px #ccc;
+    position: absolute;
+    left: 1300px;
+    bottom: -300px;
+     animation: bubleanimation 9s 1s  infinite ease-in;
+
+
+}
