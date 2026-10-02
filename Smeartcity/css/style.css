@@ -1,0 +1,1602 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	width: 100%;
+	background-color: #fff;
+	color: #333;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+a {
+	color: inherit;
+}
+
+/* =========================================
+   HEADER & NAVIGATION
+   ========================================= */
+header {
+	max-width: 100%;
+	width: 100%;
+	display: flex;
+	padding: 12px 50px;
+	box-shadow: 0px 2px 10px 0px #ccc;
+	position: sticky;
+	top: 0px;
+	background-color: white;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+}
+
+header figure a {
+	display: inline-block;
+}
+
+header figure img {
+	width: 100px;
+	height: auto;
+}
+
+.nav-toggle {
+	display: none;
+	background: transparent;
+	border: none;
+	font-size: 26px;
+	color: #306598;
+	cursor: pointer;
+	padding: 8px 12px;
+	border-radius: 4px;
+	transition: background-color 0.2s;
+}
+
+.nav-toggle:focus {
+	outline: 2px solid #306598;
+}
+
+header>nav>ul {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+header a {
+	color: black;
+	font-size: 15px;
+	transition: color 0.2s ease;
+}
+
+header a:hover {
+	color: #306598;
+}
+
+header>nav>ul>li:nth-child(7) button {
+	background-color: green;
+	color: white;
+	border: none;
+	padding: 10px 18px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 14px;
+	transition: opacity 0.2s;
+}
+
+header>nav>ul>li:nth-child(7) button:hover {
+	opacity: 0.9;
+}
+
+header>nav>ul>li:nth-child(8) button {
+	background-color: white;
+	color: orange;
+	font-weight: bold;
+	border: 2px solid orange;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+header>nav>ul>li:nth-child(8) button:hover {
+	background-color: orange;
+	color: white;
+}
+
+/* =========================================
+   BANNER SECTION
+   ========================================= */
+.bannersection {
+	width: 100%;
+}
+
+.bannersectionmid {
+	width: 100%;
+}
+
+.bannersection>figure>img,
+.bannersectionmid>img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* =========================================
+   SITE VISIT FORM
+   ========================================= */
+.siteviste {
+	background-color: #306598;
+	width: 100%;
+	padding: 50px 20px;
+}
+
+.siteform {
+	max-width: 1170px;
+	width: 100%;
+	margin: auto;
+}
+
+.siteform>h3 {
+	margin: 20px 0px;
+	font-size: 38px;
+	color: white;
+	text-align: center;
+}
+
+.siteform>form {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.siteform>form>input {
+	padding: 12px 20px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	font-size: 15px;
+	outline: none;
+	flex: 1 1 200px;
+	max-width: 100%;
+}
+
+.siteform>form>button {
+	background-color: green;
+	color: white;
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 12px 30px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: opacity 0.2s;
+	flex: 0 0 auto;
+}
+
+.siteform>form>button:hover {
+	opacity: 0.9;
+}
+
+.siteform>form>button>a {
+	color: white;
+}
+
+/* =========================================
+   SMART SECTION (WHY SMART CITY)
+   ========================================= */
+.Smartsection {
+	width: 100%;
+	background-color: #F3F3F3;
+}
+
+.scItemsection {
+	max-width: 1170px;
+	width: 100%;
+	margin: auto;
+	padding: 50px 20px;
+}
+
+.scItemsection>h1 {
+	text-align: center;
+	color: #306598;
+	text-transform: uppercase;
+	word-spacing: 6px;
+	font-size: 34px;
+}
+
+.scItemsection>h4 {
+	text-align: center;
+	padding: 10px 0px;
+	margin: 15px 0 25px;
+	font-size: 18px;
+	color: #444;
+	font-weight: normal;
+}
+
+.scIsectiomimg {
+	max-width: 1170px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+
+.scIsectiomimg>figure {
+	flex: 1 1 33.3%;
+}
+
+.scIsectiomimg>figure>img {
+	width: 100%;
+	height: auto;
+	border-radius: 6px;
+}
+
+/* =========================================
+   ABOUT SECTION (OVERVIEW)
+   ========================================= */
+.aboutsection {
+	width: 100%;
+}
+
+.aboutItem {
+	max-width: 1170px;
+	width: 100%;
+	margin: auto;
+	gap: 40px;
+	display: flex;
+	align-items: center;
+	padding: 50px 20px;
+}
+
+.aboutItem>figure {
+	flex: 1 1 50%;
+}
+
+.aboutItem>figure>img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+.aboutItem>article {
+	flex: 1 1 50%;
+}
+
+.aboutItem>article>h2 {
+	color: #306598;
+	margin: 0px;
+	text-transform: uppercase;
+	font-size: 32px;
+}
+
+.aboutItem>article>p {
+	padding: 15px 0px;
+	font-family: sans-serif;
+	line-height: 1.6;
+	color: #444;
+	font-size: 15px;
+}
+
+.aboutItem>article>ul {
+	margin-top: 10px;
+}
+
+.aboutItem>article>ul>li {
+	padding: 8px 0px;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+}
+
+.aboutItem>article>ul>li>i {
+	padding-right: 12px;
+	color: green;
+}
+
+.aboutItem>article>ul>li:nth-child(5) {
+	padding-top: 15px;
+}
+
+.aboutItem>article>ul>li:nth-child(5) button {
+	background-color: green;
+	border: none;
+	color: white;
+	padding: 12px 28px;
+	border-radius: 4px;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+/* =========================================
+   PLOT SECTION (AMENITIES)
+   ========================================= */
+.plotsection {
+	width: 100%;
+	background-color: #F8F8F8;
+}
+
+.plotItem {
+	max-width: 1170px;
+	width: 100%;
+	margin: auto;
+	padding: 50px 20px;
+}
+
+.plottop>h3 {
+	text-transform: uppercase;
+	color: #306598;
+	text-align: center;
+	font-size: 32px;
+	padding-bottom: 15px;
+}
+
+.plottop>p {
+	text-align: center;
+	font-size: 16px;
+	padding: 0 10px 40px;
+	line-height: 1.6;
+	color: #555;
+	max-width: 900px;
+	margin: auto;
+}
+
+.plotMain {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.plot1 {
+	flex: 1;
+}
+
+.plot2 {
+	flex: 1.2;
+	text-align: center;
+}
+
+.plot2 figure {
+	display: inline-block;
+	max-width: 100%;
+}
+
+.plot2 figure>img,
+.plot2>img {
+	width: 100%;
+	max-width: 320px;
+	height: auto;
+	margin: auto;
+	border-radius: 8px;
+}
+
+.plot3 {
+	flex: 1;
+}
+
+.plot1Item {
+	display: flex;
+	width: 100%;
+	padding: 15px 0;
+	align-items: center;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.plot1Item>img {
+	padding: 0;
+	width: 48px;
+	height: 48px;
+	object-fit: contain;
+	flex-shrink: 0;
+}
+
+.plot1Item>p {
+	padding: 0px 15px;
+}
+
+.plot3Item {
+	display: flex;
+	width: 100%;
+	padding: 15px 0;
+	align-items: center;
+	justify-content: flex-end;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.plot3Item>img {
+	padding: 0;
+	width: 48px;
+	height: 48px;
+	object-fit: contain;
+	flex-shrink: 0;
+}
+
+.plot3Item>p {
+	padding: 0px 15px;
+	text-align: right;
+	flex-grow: 1;
+}
+
+/* =========================================
+   PBRERA & STATS
+   ========================================= */
+.PBRERA {
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+.pbimg {
+	max-width: 1170px;
+	width: 100%;
+	margin: auto;
+	padding: 50px 20px 0;
+}
+
+.pbimg>figure {
+	text-align: center;
+}
+
+.pbimg>figure>img {
+	width: 250px;
+	max-width: 100%;
+	margin: auto;
+}
+
+.pbimg>figure>p {
+	font-weight: bold;
+	padding-top: 10px;
+	font-size: 15px;
+}
+
+.pbimg>hr {
+	margin: 25px 0;
+	border: 0;
+	border-top: 1px solid #ddd;
+}
+
+.pbimg>p {
+	padding: 10px 0;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #444;
+}
+
+.pbimg>h4 {
+	padding: 15px 0;
+	font-size: 18px;
+	color: #306598;
+}
+
+.Plotsre {
+	max-width: 1170px;
+	width: 100%;
+	margin: 25px auto 0;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.plITem {
+	width: 100%;
+	min-height: 180px;
+	box-shadow: 0px 0px 10px 2px #ccc;
+	text-align: center;
+	padding: 20px 10px;
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+}
+
+.plITem>figure {
+	margin-bottom: 10px;
+}
+
+.plITem>figure>img {
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+	margin: auto;
+}
+
+.plITem>h3 {
+	font-size: 32px;
+	padding: 5px 0;
+	color: #306598;
+}
+
+.plITem>p {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+	color: #666;
+}
+
+.list {
+	width: 100%;
+	text-align: center;
+	padding: 30px 0 10px;
+}
+
+.list>h2 {
+	font-size: 36px;
+	text-transform: uppercase;
+	padding: 10px 0px;
+	color: #306598;
+}
+
+.list>hr {
+	max-width: 120px;
+	margin: 10px auto;
+	border: 0;
+	border-top: 2px solid #306598;
+}
+
+.list>p {
+	font-size: 16px;
+	color: #306598;
+	padding: 10px 0px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+/* =========================================
+   TABLE SECTION (PRICE LIST)
+   ========================================= */
+.tablemain {
+	width: 100%;
+	padding: 20px 0 40px;
+}
+
+.table {
+	max-width: 1170px;
+	width: 100%;
+	margin: auto;
+	padding: 0 15px;
+	overflow-x: auto;
+}
+
+.table>table {
+	margin: auto;
+	width: 65%;
+	min-width: 320px;
+	border-collapse: collapse;
+}
+
+.table>table>thead th {
+	background-color: #306598;
+	padding: 15px 10px;
+	color: white;
+}
+
+.table>table>thead:nth-child(1) h2 {
+	font-size: 16px;
+	padding: 5px 10px;
+}
+
+.table>table>thead:nth-child(1) p {
+	font-size: 14px;
+	font-weight: normal;
+	padding-top: 5px;
+}
+
+.table>table>tbody>tr>td {
+	padding: 12px 10px;
+	text-align: center;
+	border: 1px solid #ccc;
+	font-size: 15px;
+}
+
+.table>table>tbody>tr>td>button {
+	background-color: black;
+	color: white;
+	padding: 10px 18px;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+	font-size: 14px;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.table>table>tbody>tr>td>button>i {
+	color: gold;
+}
+
+/* =========================================
+   HIGHLIGHTS SECTION
+   ========================================= */
+.ImgConter {
+	max-width: 1170px;
+	width: 100%;
+	margin: auto;
+	padding: 50px 20px 20px;
+	text-align: center;
+}
+
+.ImgConter>figure>img {
+	width: 80%;
+	margin: auto;
+	border-radius: 8px;
+}
+
+.ImgConter>h2 {
+	color: #306598;
+	text-align: center;
+	font-size: 34px;
+	padding: 25px 0 10px;
+	text-transform: uppercase;
+}
+
+.ImgConter>hr {
+	max-width: 120px;
+	margin: auto;
+	border: 0;
+	border-top: 2px solid #306598;
+}
+
+.hightlight {
+	max-width: 1170px;
+	width: 100%;
+	display: grid;
+	margin: auto;
+	align-items: flex-start;
+	gap: 25px;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 40px 20px;
+}
+
+.hiItem {
+	text-align: center;
+	padding: 20px 15px;
+	background: #fbfbfb;
+	border: 1px solid #eee;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.hiItem>figure>img {
+	margin: auto;
+	width: 50px;
+	height: 50px;
+	object-fit: contain;
+}
+
+.hiItem>p {
+	font-size: 15px;
+	padding: 12px 0 0;
+	color: #444;
+	line-height: 1.5;
+}
+
+.buMain {
+	width: 100%;
+}
+
+.hiButton {
+	max-width: 1170px;
+	width: 100%;
+	margin: auto;
+	padding: 20px 20px 50px;
+	text-align: center;
+}
+
+.hiButton>button {
+	padding: 18px 60px;
+	font-size: 22px;
+	font-weight: bold;
+	box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.25);
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 8px;
+	border: none;
+	background-color: #e8a909fc;
+	color: #111;
+	cursor: pointer;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hiButton>button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================================
+   PROJECT VIDEOS
+   ========================================= */
+.Project {
+	width: 100%;
+	margin: 30px 0px;
+}
+
+.Project>article {
+	text-align: center;
+	padding: 0 15px;
+}
+
+.Project>article>h3 {
+	color: #306598;
+	font-size: 32px;
+	text-transform: uppercase;
+}
+
+.Project>article>p {
+	font-size: 16px;
+	padding: 15px 0px;
+	color: #555;
+	max-width: 800px;
+	margin: auto;
+}
+
+.proVid {
+	max-width: 1170px;
+	width: 100%;
+	margin: 20px auto;
+	display: grid;
+	gap: 25px;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 0 20px;
+}
+
+.proVid>iframe {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	height: auto;
+	border-radius: 8px;
+	border: 0;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* =========================================
+   PLAN & LOCATION MAP
+   ========================================= */
+.Plan {
+	width: 100%;
+	margin: 40px 0px;
+}
+
+.PlanItem {
+	max-width: 1170px;
+	width: 100%;
+	margin: auto;
+	padding: 0 20px;
+}
+
+.PlanItem>article,
+.PlanItem>figure {
+	text-align: center;
+	padding: 20px 0px;
+}
+
+.PlanItem>article>h3 {
+	color: #306598;
+	font-size: 36px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+
+.PlanItem>article>p {
+	font-size: 18px;
+	color: #555;
+}
+
+.PlanItem>figure>img {
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.map {
+	width: 100%;
+	margin: 40px 0px 20px;
+}
+
+.map>iframe {
+	width: 100%;
+	height: 400px;
+	display: block;
+}
+
+/* =========================================
+   LANDMARKS & AMENITIES
+   ========================================= */
+.LANDMARKS {
+	width: 100%;
+}
+
+.lanItem {
+	max-width: 1170px;
+	width: 100%;
+	margin: auto;
+	padding: 40px 20px;
+}
+
+.lanItem>article>h3 {
+	text-align: center;
+	color: #306598;
+	font-size: 34px;
+	text-transform: uppercase;
+	padding: 15px 0px;
+}
+
+.lanItem>article>p {
+	text-align: center;
+	margin: 10px 0 25px;
+	color: #555;
+	font-size: 16px;
+}
+
+.lanItem>ul {
+	border-bottom: 1px solid #ddd;
+}
+
+.lanItem>ul>h4 {
+	font-size: 20px;
+	font-weight: 500;
+	color: #555;
+	padding: 18px 0px;
+}
+
+.amenMain {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 15px;
+}
+
+.amImg>figure {
+	width: 100%;
+	text-align: center;
+	padding: 30px 10px;
+}
+
+.amImg>figure>img {
+	margin: auto;
+	width: 60px;
+	height: 60px;
+	object-fit: contain;
+}
+
+.amImg>figure>h4 {
+	font-weight: 500;
+	padding: 10px 0px;
+	font-size: 18px;
+	color: #555;
+	text-transform: capitalize;
+}
+
+/* =========================================
+   PROJECT GALLERY
+   ========================================= */
+.gsec {
+	width: 100%;
+	margin: 40px 0;
+}
+
+.gsec>article>h2 {
+	color: #306598;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 35px;
+	font-size: 32px;
+}
+
+.gsecmid {
+	max-width: 1170px;
+	width: 100%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 25px;
+	padding: 0 20px;
+}
+
+.gecITEm {
+	width: 100%;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.gecITEm>figure>img {
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+	border-radius: 8px;
+	transition: transform 0.3s ease;
+}
+
+.gecITEm:hover>figure>img {
+	transform: scale(1.05);
+}
+
+/* =========================================
+   HOME LOAN FACILITY
+   ========================================= */
+.Loan {
+	width: 100%;
+	margin: 40px 0px;
+}
+
+.loanmid {
+	max-width: 1170px;
+	width: 100%;
+	margin: auto;
+	padding: 0 20px;
+}
+
+.loanmid>h2 {
+	color: #306598;
+	font-size: 32px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.loanmid>p {
+	text-align: center;
+	padding: 15px 0 25px;
+	color: #555;
+	font-size: 16px;
+}
+
+.loanImG {
+	width: 100%;
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.lonaItem {
+	padding: 10px;
+	box-shadow: 0px 0px 8px 1px #ddd;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fff;
+	min-height: 80px;
+}
+
+.lonaItem>figure {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.lonaItem>figure>img {
+	max-width: 100%;
+	height: 48px;
+	object-fit: contain;
+}
+
+/* =========================================
+   SCHEDULE SITE VISIT
+   ========================================= */
+.Schedule {
+	width: 100%;
+	padding: 50px 20px;
+	background-color: #F3F3F3;
+}
+
+.Schedulemid {
+	max-width: 1170px;
+	width: 100%;
+	margin: auto;
+	border: 4px solid #306598;
+	border-radius: 8px;
+	background: #fff;
+	overflow: hidden;
+}
+
+.scImg {
+	width: 100%;
+	gap: 30px;
+	padding: 30px;
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.scImg>figure>img {
+	width: 100%;
+	border-radius: 6px;
+}
+
+.scImg>article>h2 {
+	padding-bottom: 15px;
+	font-size: 28px;
+	text-transform: uppercase;
+	color: #306598;
+}
+
+.scImg>article>p {
+	text-align: justify;
+	font-size: 15px;
+	line-height: 1.6;
+	color: #555;
+}
+
+.schArt {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.schArt a {
+	display: inline-block;
+}
+
+.schArt button {
+	background-color: green;
+	color: white;
+	border-radius: 4px;
+	text-transform: capitalize;
+	border: none;
+	padding: 12px 24px;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 600;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	transition: opacity 0.2s;
+}
+
+.schArt button:hover {
+	opacity: 0.9;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.footer {
+	width: 100%;
+	background-color: #306598;
+	padding: 50px 20px 30px;
+}
+
+.foterMId {
+	max-width: 1170px;
+	width: 100%;
+	margin: auto;
+	align-items: center;
+	display: flex;
+	gap: 30px;
+}
+
+.foterMId>h2 {
+	color: white;
+	width: 50%;
+	text-align: right;
+	font-size: 24px;
+	line-height: 1.4;
+}
+
+.foterItem {
+	width: 50%;
+	text-align: left;
+}
+
+.foterItem>p>a {
+	color: white;
+	text-decoration: underline;
+}
+
+.foterItem>p {
+	padding: 6px 0;
+	color: white;
+	line-height: 1.6;
+	font-size: 15px;
+}
+
+.footer-bottom {
+	max-width: 1170px;
+	width: 100%;
+	margin: 30px auto 0;
+	padding-top: 20px;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	text-align: center;
+	color: #e0e0e0;
+	font-size: 14px;
+}
+
+/* =========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================= */
+
+/* Tablets and Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+	header {
+		padding: 12px 25px;
+	}
+
+	header>nav>ul {
+		gap: 12px;
+	}
+
+	header a {
+		font-size: 14px;
+	}
+
+	.loanImG {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.gsecmid {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+}
+
+/* Medium Tablets & Mobile Navigation (max-width: 992px) */
+@media (max-width: 992px) {
+	.nav-toggle {
+		display: block;
+	}
+
+	header nav {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background-color: #ffffff;
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+		padding: 20px;
+		border-top: 1px solid #eee;
+	}
+
+	header nav.active {
+		display: block;
+	}
+
+	header>nav>ul {
+		flex-direction: column;
+		gap: 12px;
+		align-items: stretch;
+		width: 100%;
+	}
+
+	header>nav>ul>li {
+		text-align: center;
+		width: 100%;
+	}
+
+	header>nav>ul>li>a {
+		display: block;
+		padding: 10px 0;
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	header>nav>ul>li:nth-child(7) button,
+	header>nav>ul>li:nth-child(8) button {
+		width: 100%;
+		max-width: 320px;
+		margin: 5px auto;
+		display: block;
+	}
+
+	.aboutItem {
+		flex-direction: column;
+		padding: 40px 20px;
+		gap: 30px;
+	}
+
+	.aboutItem>figure,
+	.aboutItem>article {
+		width: 100%;
+		flex: 1 1 100%;
+	}
+
+	.plotMain {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.plot2 {
+		width: 100%;
+		order: -1;
+	}
+
+	.plot1,
+	.plot3 {
+		width: 100%;
+	}
+
+	.plot3Item {
+		justify-content: flex-start;
+		flex-direction: row-reverse;
+	}
+
+	.plot3Item>p {
+		text-align: left;
+	}
+
+	.amenMain {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* Mobile Screens (max-width: 768px) */
+@media (max-width: 768px) {
+	header {
+		padding: 10px 20px;
+	}
+
+	.siteviste {
+		padding: 35px 15px;
+	}
+
+	.siteform>h3 {
+		font-size: 26px;
+		margin-bottom: 20px;
+	}
+
+	.siteform>form {
+		flex-direction: column;
+		gap: 12px;
+		width: 100%;
+	}
+
+	.siteform>form>input {
+		width: 100%;
+		flex: 1 1 auto;
+	}
+
+	.siteform>form>button {
+		width: 100%;
+		padding: 14px 20px;
+	}
+
+	.Smartsection .scItemsection {
+		padding: 35px 15px;
+	}
+
+	.scItemsection>h1 {
+		font-size: 26px;
+		word-spacing: normal;
+	}
+
+	.scItemsection>h4 {
+		font-size: 15px;
+		margin: 10px 0 20px;
+	}
+
+	.scIsectiomimg {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.scIsectiomimg>figure {
+		width: 100%;
+	}
+
+	.aboutItem>article>h2 {
+		font-size: 26px;
+	}
+
+	.aboutItem>article>ul>li:nth-child(5) button {
+		width: 100%;
+		max-width: 280px;
+	}
+
+	.plotItem {
+		padding: 35px 15px;
+	}
+
+	.plottop>h3 {
+		font-size: 26px;
+	}
+
+	.plottop>p {
+		font-size: 15px;
+		padding-bottom: 25px;
+	}
+
+	.plot1Item,
+	.plot3Item {
+		font-size: 16px;
+	}
+
+	.pbimg {
+		padding: 35px 15px 0;
+	}
+
+	.pbimg>figure>img {
+		width: 190px;
+	}
+
+	.Plotsre {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+	}
+
+	.plITem {
+		min-height: 150px;
+		padding: 15px 10px;
+	}
+
+	.plITem>h3 {
+		font-size: 28px;
+	}
+
+	.plITem>p {
+		font-size: 14px;
+	}
+
+	.list>h2 {
+		font-size: 28px;
+	}
+
+	.table>table {
+		width: 100%;
+	}
+
+	.ImgConter {
+		padding: 35px 15px 15px;
+	}
+
+	.ImgConter>figure>img {
+		width: 100%;
+	}
+
+	.ImgConter>h2 {
+		font-size: 26px;
+		padding: 15px 0 10px;
+	}
+
+	.hightlight {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 25px 15px;
+		gap: 15px;
+	}
+
+	.hiButton {
+		padding: 20px 15px 40px;
+	}
+
+	.hiButton>button {
+		padding: 15px 30px;
+		font-size: 17px;
+		width: 100%;
+		max-width: 320px;
+	}
+
+	.Project>article>h3 {
+		font-size: 26px;
+	}
+
+	.proVid {
+		grid-template-columns: 1fr;
+		padding: 0 15px;
+		gap: 15px;
+	}
+
+	.Plan {
+		margin: 30px 0;
+	}
+
+	.PlanItem {
+		padding: 0 15px;
+	}
+
+	.PlanItem>article>h3 {
+		font-size: 28px;
+	}
+
+	.PlanItem>article>p {
+		font-size: 15px;
+	}
+
+	.lanItem {
+		padding: 30px 15px;
+	}
+
+	.lanItem>article>h3 {
+		font-size: 26px;
+	}
+
+	.lanItem>ul>h4 {
+		font-size: 17px;
+		padding: 14px 0;
+	}
+
+	.gsec {
+		margin: 30px 0;
+	}
+
+	.gsec>article>h2 {
+		font-size: 26px;
+		margin-bottom: 25px;
+	}
+
+	.gsecmid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+		padding: 0 15px;
+	}
+
+	.gecITEm>figure>img {
+		height: 170px;
+	}
+
+	.Loan {
+		margin: 30px 0;
+	}
+
+	.loanmid {
+		padding: 0 15px;
+	}
+
+	.loanmid>h2 {
+		font-size: 26px;
+	}
+
+	.loanImG {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 12px;
+	}
+
+	.Schedule {
+		padding: 35px 15px;
+	}
+
+	.Schedulemid {
+		border-width: 3px;
+	}
+
+	.scImg {
+		grid-template-columns: 1fr;
+		padding: 20px;
+		gap: 20px;
+	}
+
+	.scImg>article>h2 {
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.schArt {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.schArt a,
+	.schArt button {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.footer {
+		padding: 35px 15px 25px;
+	}
+
+	.foterMId {
+		flex-direction: column;
+		text-align: center;
+		gap: 20px;
+	}
+
+	.foterMId>h2 {
+		width: 100%;
+		text-align: center;
+		font-size: 22px;
+	}
+
+	.foterItem {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/* Small Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+	header {
+		padding: 10px 15px;
+	}
+
+	header figure img {
+		width: 85px;
+	}
+
+	.siteform>h3 {
+		font-size: 22px;
+	}
+
+	.scItemsection>h1 {
+		font-size: 22px;
+	}
+
+	.aboutItem>article>h2 {
+		font-size: 22px;
+	}
+
+	.plottop>h3 {
+		font-size: 22px;
+	}
+
+	.plot1Item,
+	.plot3Item {
+		font-size: 15px;
+	}
+
+	.hightlight {
+		grid-template-columns: 1fr;
+	}
+
+	.amenMain {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+
+	.amImg>figure {
+		padding: 15px 5px;
+	}
+
+	.amImg>figure>h4 {
+		font-size: 15px;
+	}
+
+	.gsecmid {
+		grid-template-columns: 1fr;
+	}
+
+	.gecITEm>figure>img {
+		height: 200px;
+	}
+
+	.loanImG {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.map>iframe {
+		height: 280px;
+	}
+
+	.table>table>thead:nth-child(1) h2 {
+		font-size: 13px;
+	}
+
+	.table>table>thead:nth-child(1) p {
+		font-size: 12px;
+	}
+
+	.table>table>tbody>tr>td {
+		font-size: 13px;
+		padding: 10px 5px;
+	}
+
+	.table>table>tbody>tr>td>button {
+		padding: 8px 12px;
+		font-size: 12px;
+	}
+}
